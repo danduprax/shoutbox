@@ -1,0 +1,124 @@
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 15px;
+	line-height: 1.5em;
+	background: #f4f4f4;
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+/*
+.info {
+	width: 90%;
+	color: #44D;
+	margin: 0 auto;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 15px 0 0px;
+	text-align: center;
+}
+*/
+
+header {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 0px;
+	border-bottom: 1px solid #999;
+}
+
+header h1 {
+	color: #444;
+	font-size: 22px;
+	padding: 15px 0 10px;
+}
+
+#shouts {
+	width: 90%;
+	overflow: auto;
+	height: 260px;
+	margin: 10px auto;
+	margin-bottom: 25px;
+	background: #f4f4f4;
+}
+
+.shout {
+	padding: 8px;
+	list-style: none;
+	border-bottom: 1px #ccc dotted;
+}
+
+.shout span {
+	color: #aaa;
+}
+
+#input {
+	width: 90%;
+	margin: 10px auto;
+}
+
+#input input[type="text"] {
+	float: left;
+	width: 49%;
+	height: 30px;
+	padding: 5px;
+	border: 1px #666 solid;
+}
+
+#input input:first-child {
+	margin-right: 2%;
+}
+
+#input input[type="submit"] {
+	width: 100%;
+	padding: 5px;
+	margin: 10px auto 0px;
+}
+
+#information {
+	width: 90%;
+	margin: 10px auto;
+}
+
+#information .info-text {
+	color: #333;
+	width: 100%;
+	padding: 10px;
+	display: block;
+	font-weight: bold;
+	text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+	#container {
+		width: 80%;
+		background: #333;
+		margin: 30px auto;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#input input[type="text"] {
+		width: 100%;
+		margin-bottom: 7px;
+	}
+
+	#input input[type="submit"] {
+		margin-top: 3px;
+	}
+}
